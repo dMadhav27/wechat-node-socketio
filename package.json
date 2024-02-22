@@ -1,0 +1,25 @@
+{
+  "name": "wechat",
+  "version": "1.0.0",
+  "description": "Realtime chat app with rooms",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "webpack --config=Scripts/config/webpack.dev.js --watch",
+    "build": "webpack --config=Scripts/config/webpack.prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Madhav Dhobley",
+  "license": "MIT",
+  "dependencies": {
+    "@socket.io/redis-adapter": "^7.1.0",
+    "dotenv": "^14.3.2",
+    "express": "^4.18.2",
+    "moment": "^2.30.1",
+    "redis": "^4.0.2",
+    "socket.io": "^4.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
